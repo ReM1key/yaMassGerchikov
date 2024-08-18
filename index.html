@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>testGerchikova</title>
+</head>
+<body>
+    <div class="container">
+        <div class="uploadFiles">
+            <input type="file" id="file" accept=".xlsx, .xls" style="display: none"/>
+            <button class="upload" onclick="uploadFile()">Выберите файл</button>
+            <button class="read" onclick="readExcel()">Read Excel</button>
+        </div>
+        <div class="tableBlock">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

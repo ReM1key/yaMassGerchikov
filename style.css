@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    display: grid;
+    background: hsl(227, 10%, 10%);
+    font: 300 1em 'Fira Sans', sans-serif;
+    min-height: 100vh;
+    overflow: scroll;
+}  
+
+.container {
+    display: grid;
+    max-width: 1200px;
+    place-content: center center;
+    margin: 0 auto;
+}
+
+.uploadFiles {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(1fr, 500px));
+    gap: 10px;
+}
+
+.upload {
+    color: #8fc866;
+    transition: 0.25s;
+}
+
+.read {
+    color: #8fc866;
+    transition: 0.25s;
+}
+
+.tableBlock {
+    display: grid;
+}
+
+.mainMotive {
+    width: auto;
+    place-content: center center;
+    color: #8fc866;
+    transition: 1s;
+}
+
+.mainMotive:hover {
+  box-shadow: inset 100em 0 0 0 #8fc866;
+  color: black;
+  cursor: pointer;
+  text-indent: 50%;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+}
+
+.upload:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5em 0.5em -0.4em #8fc866;
+    transform: translateY(-0.25em);
+}
+
+.read:hover {
+    cursor: pointer;
+    box-shadow: 0 -0.5em 0.5em -0.4em #8fc866;
+    transform: translateY(0.25em);
+}
+
+/* .read:hover, 
+.read:focus {
+    cursor: pointer;
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+} */
+
+.read:active, .upload:active {
+    transform: scale(0.9);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 #8fc866; }
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    padding: 5px;
+}
+
+table tr:hover {
+    cursor: pointer;
+    background-color: #8fc86644;
+}
